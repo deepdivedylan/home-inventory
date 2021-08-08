@@ -6,6 +6,6 @@ RUN cat /tmp/home-inventory.sql | sqlite3 /usr/share/nginx/home-inventory.sqlite
 RUN rm /tmp/home-inventory.sql
 #COPY php /usr/share/ngnix/php
 COPY vendor /usr/share/nginx/vendor
-#COPY public_html /usr/share/nginx/html
+COPY public_html /usr/share/nginx/html
 RUN chown -R nginx:nginx /usr/share/nginx
 EXPOSE 80

@@ -2,3 +2,5 @@
 .DS_Store
 /node_modules
 /vendor
+/public_html/index.php
+/public_html/dist
